@@ -24,7 +24,7 @@ def solution(time, distance):
     c = distance
     disc = b * b - 4 * a * c
     left = (-b - disc ** 0.5) / (2 * a)
-    right = (-b + disc ** 0.5) / 2 * a
+    right = (-b + disc ** 0.5) / (2 * a)
     if left > time:
         return 0
     return math.floor(right) - math.ceil(left) + 1
